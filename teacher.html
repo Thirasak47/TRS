@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ประวัติผู้สอน | วิทยาการคำนวณ</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f7;
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            width: 60%;
+            margin: 60px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+        .profile-img:hover {
+            transform: scale(1.05);
+        }
+        h1 {
+            margin-top: 20px;
+            font-size: 32px;
+            font-weight: 600;
+            color: #1d1d1f;
+        }
+        p {
+            font-size: 18px;
+            color: #666;
+            margin: 8px 0;
+        }
+        .info {
+            text-align: left;
+            margin-top: 30px;
+            padding: 0 40px;
+        }
+        .info p {
+            font-size: 16px;
+            color: #444;
+            margin: 12px 0;
+            line-height: 1.6;
+        }
+        .info p strong {
+            color: #000;
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #888;
+        }
+         /* การตกแต่งลิงก์ออกจากระบบ/กลับหน้บทเรียน */
+         .logout-link {
+            font-size: 16px;
+            color: #000000;
+            text-decoration: none;
+            border: 1px solid #000000;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        /* การตกแต่งลิงก์ออกจากระบบเมื่อมีการโฮเวอร์กลับหน้บทเรียน */
+        .logout-link:hover {
+            background-color: #162e48;
+            color: #ffffff;
+        }
+            
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="profile-img" src="images/teacher.jpg" alt="รูปภาพผู้สอน">  
+        <h1>นายธีระศักดิ์ มณีโชติ</h1>
+        <p>อาจารย์ผู้สอนวิชาวิทยาการคำนวณ ม.3</p><br><br><br>
+        <div class="info">
+            <p><strong>📌 ประวัติการศึกษา:</strong> ปริญญาตรี วิทยาการคอมพิวเตอร์ มหาวิทยาลัยครู</p>
+            <p><strong>📌 ประสบการณ์สอน:</strong> สอนวิทยาการคำนวณมากกว่า 5 ปี</p>
+            <p><strong>📌 ทักษะพิเศษ:</strong> HTML, CSS, JavaScript, Scratch, Python</p>
+            <p><strong>📌 คติประจำใจ:</strong> "การเรียนรู้ไม่มีที่สิ้นสุด"</p>
+            <p><strong>📌 อีเมล:</strong> thirasak232320@gmail.com</p>
+            <p><strong>📌 เบอร์โทร:</strong> 0942094503</p>
+        </div>
+        <div><a href="dashboard.php" class="logout-link">🔙 กลับไปหน้าบทเรียน</a>
+        </div>
+    </div>
+</body>
+</html>

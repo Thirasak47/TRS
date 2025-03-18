@@ -1,0 +1,82 @@
+/* กำหนดรูปแบบตัวอักษรและพื้นหลังของหน้าเว็บ */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f7;
+    text-align: center;
+}
+
+/* กำหนดรูปแบบของส่วนหัว */
+.header {
+    display: flex; /* ใช้ Flexbox เพื่อจัดเรียงองค์ประกอบภายใน */
+    justify-content: flex-end; /* จัดให้อยู่ชิดขอบขวา */
+    align-items: center; /* จัดให้อยู่ตรงกลางในแนวตั้ง */
+    padding: 10px 20px; /* กำหนดระยะห่างภายใน */
+    background: white; /* พื้นหลังสีขาว */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* เงาเบาๆ */
+    position: fixed; /* ตำแหน่งคงที่ */
+    top: 0; /* ชิดขอบบน */
+    right: 0; /* ชิดขอบขวา */
+    width: 100%; /* ความกว้างเต็มจอ */
+}
+
+/* กำหนดรูปแบบของข้อความในส่วนหัว */
+.header-right {
+    font-size: 8px; 
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-align: right;
+}
+/* กำหนดรูปแบบของลิงก์ออกจากระบบ */
+.logout-link {
+    text-decoration: none; /* ไม่มีเส้นใต้ */
+    background: #0071e3; /* พื้นหลังสีน้ำเงิน */
+    color: white; /* ตัวอักษรสีขาว */
+    padding: 4px 8px; /* ระยะห่างภายในเล็กลง */
+    border-radius: 10px; /* มุมโค้งเล็กลง */
+    font-size: 12px; /* ขนาดตัวอักษรเล็กลง */
+    transition: 0.3s; /* การเปลี่ยนแปลงแบบนุ่มนวล */
+    top: 10px;
+    right: 10px;
+}
+
+/* กำหนดรูปแบบของลิงก์ออกจากระบบเมื่อเมาส์ชี้ */
+.logout-link:hover {
+    background: #005bb5; /* พื้นหลังสีเข้มขึ้น */
+}
+
+/* กำหนดระยะห่างด้านบนของเนื้อหา */
+.content {
+    margin-top: 60px; /* ระยะห่างด้านบน */
+}
+
+/* กำหนดรูปแบบของรายการบทเรียน */
+.lesson-list {
+    display: flex; /* ใช้ Flexbox เพื่อจัดเรียงองค์ประกอบภายใน */
+    justify-content: center; /* จัดให้อยู่ตรงกลางในแนวนอน */
+    flex-wrap: wrap; /* ให้รายการสามารถห่อได้ */
+    gap: 20px; /* ระยะห่างระหว่างรายการ */
+    padding: 20px; /* ระยะห่างภายใน */
+}
+
+/* กำหนดรูปแบบของลิงก์ในรายการบทเรียน */
+.lesson-list a {
+    display: block; /* แสดงเป็นบล็อก */
+    background: white; /* พื้นหลังสีขาว */
+    padding: 20px; /* ระยะห่างภายใน */
+    border-radius: 15px; /* มุมโค้ง */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* เงาเบาๆ */
+    text-decoration: none; /* ไม่มีเส้นใต้ */
+    color: black; /* ตัวอักษรสีดำ */
+    font-size: 18px; /* ขนาดตัวอักษร */
+    transition: 0.3s; /* การเปลี่ยนแปลงแบบนุ่มนวล */
+    min-width: 250px; /* ความกว้างขั้นต่ำ */
+}
+
+/* กำหนดรูปแบบของลิงก์ในรายการบทเรียนเมื่อเมาส์ชี้ */
+.lesson-list a:hover {
+    transform: translateY(-5px); /* ยกขึ้นเล็กน้อย */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* เงาเข้มขึ้น */
+}
